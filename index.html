@@ -7,6 +7,19 @@
     <link href="index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div id="content">
+    <label for="select-time">How much time do you have?</label>
+    <select name="time" id="select-time" autofocus>
+        <option value="minutes05" selected>05 minutes</option>
+        <option value="minutes10">10 minutes</option>
+        <option value="minutes30">30 minutes</option>
+    </select>
+    <button id="button-roll">Roll</button>
+    <div>
+        <p id="rolled-task"></p>
+    </div>
+</div>
 
+<script src="index.js" type="text/javascript"></script>
 </body>
 </html>
