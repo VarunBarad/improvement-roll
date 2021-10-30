@@ -71,4 +71,6 @@ const roll = () => {
   document.getElementById('rolled-task').innerText = selectedTask;
 };
 
-document.getElementById('button-roll').addEventListener('click', roll);
+const buttonRoll = document.getElementById('button-roll');
+buttonRoll.addEventListener('click', roll);
+buttonRoll.addEventListener('mouseup', () => { buttonRoll.blur(); });
