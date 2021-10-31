@@ -63,14 +63,16 @@ const randomlySelectTask = (tasks) => {
   return tasks[index];
 };
 
+const timeSelector = document.getElementById('select-time');
+const buttonRoll = document.getElementById('button-roll');
+const rolledTask = document.getElementById('rolled-task');
+
 const roll = () => {
-  const timeSelector = document.getElementById('select-time');
   const availableTasks = tasks[timeSelector.value];
   const selectedTask = randomlySelectTask(availableTasks);
 
-  document.getElementById('rolled-task').innerText = selectedTask;
+  rolledTask.innerText = selectedTask;
 };
 
-const buttonRoll = document.getElementById('button-roll');
 buttonRoll.addEventListener('click', roll);
 buttonRoll.addEventListener('mouseup', () => { buttonRoll.blur(); });
