@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+#content {
+    padding: 16px;
+}
+
+label, select, button, #rolled-task {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    label, select, button, #rolled-task {
+        width: 100%;
+    }
+
+    label {
+        margin: 0 0 8px 0;
+    }
+
+    select {
+        margin: 8px 0 8px 0;
+    }
+
+    button {
+        margin: 8px 0 8px 0;
+    }
+
+    #rolled-task {
+        margin: 24px 0 0 0;
+    }
+}
+
+@media (min-width: 901px) {
+    label, select, button, #rolled-task {
+        width: 33vw;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    label {
+        margin-bottom: 8px;
+    }
+
+    select {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    button {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    #rolled-task {
+        margin-top: 24px;
+    }
+}
