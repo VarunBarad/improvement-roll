@@ -16,6 +16,13 @@ label, select, button, #rolled-task {
     font-size: 1rem;
 }
 
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    margin: 32px auto;
+}
+
 @media (max-width: 900px) {
     label, select, button, #rolled-task {
         width: 100%;
