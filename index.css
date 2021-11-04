@@ -10,10 +10,14 @@ html, body {
     padding: 16px;
 }
 
-label, select, button, #rolled-task {
+label, select, button, #rolled-task, footer {
     display: block;
     text-align: center;
     font-size: 1rem;
+}
+
+#rolled-task {
+    min-height: 32px;
 }
 
 h1 {
@@ -24,7 +28,7 @@ h1 {
 }
 
 @media (max-width: 900px) {
-    label, select, button, #rolled-task {
+    label, select, button, #rolled-task, footer {
         width: 100%;
     }
 
