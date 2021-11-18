@@ -1,3 +1,29 @@
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #222831;
+        color: #eeeeee;
+    }
+    a {
+        color: #00bd56;
+    }
+    a:visited {
+        color: #ffd369;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        background-color: #dddddd00;
+        color: #222831;
+    }
+    a {
+        color: #1f6cb0;
+    }
+    a:visited {
+        color: #f05454;
+    }
+}
+
 html, body {
     margin: 0;
     padding: 0;
