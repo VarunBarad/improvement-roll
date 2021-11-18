@@ -31,5 +31,8 @@
   "theme_color": "#00bd56",
   "background_color": "#222831",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "any",
+  "categories": ["productivity"],
+  "description": "A dice to suggest you better uses of your free time",
+  "lang": "en-IN"
 }
