@@ -42,6 +42,11 @@ label, select, button, #rolled-task, footer {
     font-size: 1rem;
 }
 
+noscript {
+    display: block;
+    font-size: 1rem;
+}
+
 #rolled-task {
     min-height: 32px;
 }
@@ -54,7 +59,7 @@ h1 {
 }
 
 @media (max-width: 900px) {
-    label, select, button, #rolled-task, footer {
+    label, select, button, #rolled-task, footer, noscript {
         width: 100%;
     }
 
@@ -76,7 +81,7 @@ h1 {
 }
 
 @media (min-width: 901px) {
-    label, select, button, #rolled-task {
+    label, select, button, #rolled-task, noscript {
         width: 33vw;
         max-width: 900px;
         margin: 0 auto;
