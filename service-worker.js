@@ -7,11 +7,12 @@ const filesToCache = [
 ];
 
 self.addEventListener('install', function (event) {
-  event.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      return cache.addAll(filesToCache);
-    })
-  );
+  const promiseChain = Promise.resolve()
+      .then(() => caches.delete(cacheName))
+      .then(() => caches.open(cacheName))
+      .then((cache) => cache.addAll(filesToCache));
+
+  event.waitUntil(promiseChain);
 });
 
 self.addEventListener('fetch', function (event) {
