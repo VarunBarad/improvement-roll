@@ -16,6 +16,8 @@ const tasks = {
     'Ensure the ice-tray is filled',
     'Trim your nails',
     'Wash your face',
+    'Organize 1 file from NAS Inbox',
+    'Do 5 squats',
   ],
   minutes10: [
     'Meditate for 10 minutes',
@@ -35,12 +37,12 @@ const tasks = {
     'Read one unread email',
     'Ensure the electronic gadgets are charged',
     'Clean your camera-roll/screenshots folder',
+    'Make your bed',
   ],
   minutes30: [
     'Go for a short walk',
     'Clean the area around you',
     'Read a chapter of a book',
-    'Practice a musical instrument for 20 minutes',
     'Do a calisthenics workout',
     'Groom yourself',
     'Write a short story',
