@@ -54,6 +54,21 @@
     </select>
     <button id="button-roll">Roll</button>
     <p id="rolled-task"></p>
+    <div id="customize-section" style="display: none;">
+        <h2 style="text-align: center; font-size: 1.5rem; margin-top: 32px;">Customize Tasks</h2>
+        <label for="customize-select-time">Select time category:</label>
+        <select name="time" id="customize-select-time">
+            <option value="minutes05" selected>05 minutes</option>
+            <option value="minutes10">10 minutes</option>
+            <option value="minutes30">30 minutes</option>
+        </select>
+        <label for="customize-input-task">Add a new task:</label>
+        <input type="text" id="customize-input-task" placeholder="Enter your task">
+        <button id="customize-button-add">Add Task</button>
+        <div id="custom-tasks-list"></div>
+        <p id="customize-message"></p>
+    </div>
+    <button id="button-customize" style="margin-top: 24px;">Customize Tasks</button>
     <noscript>
         <details>
             <summary>05 minutes</summary>
